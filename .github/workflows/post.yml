@@ -19,6 +19,6 @@ jobs:
       - name: Send post
         run: npm start
         env:
-          BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+          BLUESKY_HANDLE: ${{ secrets.BLUESKY_USERNAME }}
           BLUESKY_PASSWORD: ${{ secrets.BLUESKY_PASSWORD }}
           NASA_API_KEY: ${{ secrets.NASA_API_KEY }}
