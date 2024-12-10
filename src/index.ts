@@ -53,7 +53,7 @@ async function postToBluesky(imageUrl: string, title: string, explanation: strin
     });
 
     // Create the post content
-    const text = `${title}\nImage Credit: NASA\nDate: ${imageDate}\n#Space #Astronomy #Cosmos #Universe #Galaxy #SpaceExploration`;
+    const text = `${title}\nImage from NASA APOD. Please check NASA APOD for further details and image credits.\nDate in APOD: ${imageDate}\n#Space #Astronomy #Cosmos #Universe #Galaxy #SpaceExploration`;
     const rt = new RichText({ text: text });
     await rt.detectFacets(agent);
     const imageResponse = await axios.get(imageUrl, { responseType: 'arraybuffer' });
